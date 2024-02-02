@@ -50,21 +50,23 @@ public class CardTrick {
         userCard.setValue(userValue);
         userCard.setSuit(userSuit);
 
-        // Search for the match in magicHand
-        boolean found = false;
-        for (Card card : magicHand) {
-            if (card.getValue() == userCard.getValue() && card.getSuit().equalsIgnoreCase(userCard.getSuit())) {
-                found = true;
-                break;
-            }
-        }
-
-        // Report the result
-        if (found) {
-            System.out.println("Congratulations! Your card is in the magic hand!");
-        } else {
-            System.out.println("Sorry, your card is not in the magic hand.");
-        }
+        // Search for the match in magichand
+       boolean foundLuckyCard = false;
+       for (Card card : magicHand) {
+        if (card.getValue() == luckCard.getValue() && card.getSuit().equalsIgnoreCase(luckCard.getSuit())) {
+        foundLuckyCard = true;
+         break;
     }
 }
+
+    // Report the result
+    if (foundLuckyCard) {
+    System.out.println("Congratulations! You have the lucky card.");
+    } else{
+    System.out.println("Sorry, the lucky card is not in the magic hand.");
+    }
+    }
+}
+    
+
 
