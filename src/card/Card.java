@@ -10,8 +10,10 @@ package card;
  * A suit (clubs, hearts, spades, diamonds).
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in ICE1. When you create your own branch,
- * add your name as a modifier.
  * @author srinivsi
+ * @modifier AnupreetSingh
+ * s_id-991720106
+ * 2/2/2024
  */
 public class Card {
 
